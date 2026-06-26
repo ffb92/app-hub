@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Apps by ffb92",
-  description: "Kleine, fokussierte Apps für den Alltag.",
+  title: "Pixelwerft — App-Entwicklung aus Köln",
+  description: "Wir bauen mobile Apps und Web-Plattformen. Von der Idee bis zum Launch — Flutter, Next.js, Supabase.",
+  openGraph: {
+    title: "Pixelwerft — App-Entwicklung aus Köln",
+    description: "Wir bauen mobile Apps und Web-Plattformen.",
+    siteName: "Pixelwerft",
+  },
 };
 
 export default function RootLayout({
