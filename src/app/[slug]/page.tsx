@@ -25,10 +25,11 @@ export default async function AppPage({ params }: Props) {
   return (
     <div className="min-h-screen bg-[#050508]">
       {/* Nav */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#050508]/80 backdrop-blur-xl border-b border-white/[0.04]">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#050508]/80 backdrop-blur-xl border-b border-white/[0.05]">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center">
-          <Link href="/" className="text-sm font-bold tracking-tight text-white hover:text-zinc-300 transition-colors">
-            ← Pixel<span className="text-indigo-400">werft</span>
+          <Link href="/" className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors">
+            <img src="/brand/logo-mark.png" alt="" className="w-5 h-5 opacity-50" />
+            ← built <span className="text-zinc-500">by</span> <span className="font-medium">bw</span>
           </Link>
         </div>
       </nav>
@@ -136,10 +137,11 @@ export default async function AppPage({ params }: Props) {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/[0.04] py-8">
+      <footer className="border-t border-white/[0.05] py-8">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <Link href="/" className="text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
-            Pixel<span className="text-indigo-400">werft</span> © {new Date().getFullYear()}
+          <Link href="/" className="flex items-center gap-2 text-xs text-zinc-600 hover:text-zinc-400 transition-colors">
+            <img src="/brand/logo-mark.png" alt="" className="w-4 h-4 opacity-40" />
+            built <span className="text-zinc-500">by</span> <span className="text-zinc-400 font-medium">bw</span> © {new Date().getFullYear()}
           </Link>
           <div className="flex items-center gap-6 text-xs text-zinc-600">
             <Link href="/impressum" className="hover:text-zinc-400 transition-colors">Impressum</Link>
